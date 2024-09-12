@@ -19,10 +19,14 @@ public class Kafe18 {
         System.out.println("masukkan jumlah roti :");
         jumlahroti =input.nextInt();
         double totalharga = (jumlahkopi*hargakopi) + (jumlahteh*hargateh) + (jumlahroti*hargaroti);
+        byte totalByte = (byte) totalharga;
         double nominalbayar = totalharga - (diskon*totalharga);
+        int nominalInt = (int)nominalbayar;
         System.out.println("keangotaan pelanggan :" + keanggotaan);
         System.out.println("item pembelian :"+jumlahkopi+"kopi"+jumlahteh+"teh"+jumlahroti+"roti");
         System.out.println("nominal bayar : Rp" + nominalbayar);
+        System.out.println("nominal int :"+nominalInt);
+        System.out.println("totalByte :"+ totalByte);
 
     }
 }
